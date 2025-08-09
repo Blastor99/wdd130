@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Author" content="Miguel Gil">
-    <meta name="Description" content=
-
-    "Get in touch with us for inquiries, support. We're here to help and 
+    <meta name="Description" content= "Get in touch with us for inquiries, support. We're here to help and 
     will respond to your message as soon as possible.">
     
 
-    <title>Contact Us</title>
+    <title>Contact Whitewater Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,8 +29,8 @@
 
     <main class="contact-page">
       <section class="company-info">
-        <h3>Contact us</h3>
-        <h2>Get in touch today</h2>
+        <h3>Contact us</h3><br>
+        <h1 class="contact-h1">Get in touch today</h1>
         <p class="first-quote">
           We love questions and feedback, and we're always happy to help! 
           Here are some ways to contact us.
@@ -64,15 +62,15 @@
         </div> 
         <section class="happy"> 
           <figure>
-            <img src="images/Happy3.jpg" alt="Happy3">
+            <img src="images/happy3.jpg" alt="happy3">
             <figcaption>Finances</figcaption>
           </figure>
           <figure>
-            <img src="images/Happy2.jpg" alt="Happy2">
+            <img src="images/happy2.jpg" alt="happy2">
             <figcaption>Communication</figcaption>
           </figure>
           <figure>
-            <img src="images/Happy1.webp" alt="Happy1">
+            <img src="images/happy1.webp" alt="happy1">
             <figcaption>HR team</figcaption>
           </figure>
         </section>
@@ -80,27 +78,27 @@
 
       <form class="contact-info">
             <div class="fullname">
-                <label for="fullname">Full name</label><br>
+                <label for="fullname" id="fullname">Full name</label><br>
                 <input class="name-box" type="text" id="fullname" name="fullname" placeholder=" Your Name">
             </div>
             <div class="email">
-                <label for="useremail">Email</label><br>
+                <label for="useremail" id="useremail">Email</label><br>
                 <input class="box-email" type="email" name="useremail" id="useremail" placeholder=" Your Email address">
             </div>
 
             <div class="purpose">
-                <label for="browser">Purpose</label><br>
-                <input class="radio-input" type="radio" name="General Inquiry">General Inquiry
-                <input type="radio" name="Reservation">Reservation Question
-                <input type="radio" name="Suggestion">Website Suggestion
+                <label for="purpose" id="purpose">Purpose</label><br>
+                <input class="radio-input" type="radio" name="General Inquiry" id="General Inquiry">General Inquiry
+                <input type="radio" name="Reservation" id="Reservation Question">Reservation Question
+                <input type="radio" name="Suggestion" id="Website Suggestion">Website Suggestion
             </div>
-            <div class="form-item column1">
-                <textarea class="textarea" name="Contact" id="Contact" rows="6" placeholder=" Write your message here..."></textarea> 
+            <div class="form-item column1" id="textarea">
+                <textarea class="textarea" name="Contact" id="textarea" rows="6" placeholder=" Write your message here..."></textarea> 
             </div>
             <div>   
-                <label for="pet">Please subscribe to the monthly newsletter</label><br>
+                <label for="newsletter" id="newsletter">Please subscribe to the monthly newsletter</label><br>
                 <input type="checkbox" id="newsletter" name="newsletter"><br>
-                <button class="send-button" type="submit">Send Message</button>
+                <button class="send-button" type="submit" id="send-button">Send Message</button>
             </div>
         </form>
     </main>

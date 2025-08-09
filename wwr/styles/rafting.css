@@ -57,11 +57,7 @@ h1, h2 {
     text-align: center;
 }
 
-nav, p, section, article {
 
-    margin: auto;
-    padding: 8px;
-}
 
 section h2 {
     text-align: center;
@@ -93,7 +89,6 @@ section img {
 }
 
 .history h2{
-
     grid-column: 1/4;
 }
 
@@ -190,7 +185,200 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-content: space-around;
-    
 
 }
+
+/* Here starts the style of contact page */
+
+
+.company-info h2{
+
+    font-size: xx-large;
+    text-align: left;
+}
+
+.company-info h3{
+
+    font-size: x-large;
+    text-align: left;
+    color: #F8A036;
+    font-style: italic;
+}
+
+
+.first-quote{
+
+    text-align: justify;
+    margin-bottom: 40px;
+    
+}
+
+.happy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.happy img {
+
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.email-box img{
+
+    background-color: rgb(248, 160, 54, 0.6);
+    border: 2px rgb(248, 160, 54, 0.6);
+    border-radius: 12px; 
+
+    
+    width: 50px;
+    height: 50px;
+
+}
+
+.phone-box img{
+
+    background-color: rgb(248, 160, 54, 0.6);
+    border: 2px  rgb(248, 160, 54, 0.6);
+    border-radius: 12px; 
+
+    width: 50px;
+    height: 50px;
+}
+
+.address-box img{
+
+    background-color: rgb(248, 160, 54, 0.6);
+    border: 2px  rgb(248, 160, 54, 0.6);
+    border-radius: 12px; 
+
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.email-box{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    
+    
+}
+
+.value1{
+
+    grid-column: 2/6;
+    font-weight: bold;
+}
+
+.phone-box{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+}
+
+.value2{
+
+    grid-column: 2/6;
+    font-weight: bold;
+}
+
+.address-box{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+}
+
+.value3{
+
+    grid-column: 2/6;
+    font-weight: bold;
+}
+
+.map-box{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+}
+
+.map-box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact-info{
+
+    margin-top: 83px;
+    background-color: rgba(203, 202, 203, 0.205);
+    border: 2px  black;
+    border-radius: 50px;
+    height: 45%;
+    
+}
+
+.contact-info label{
+
+    font-size: small;
+    font-weight: bold;
+}
+
+.name-box{
+
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.box-email{
+
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.radio-input{
+
+    margin-top: 25px;
+}
+
+.textarea{
+
+    width: 90%;
+    border: 10px;
+    border-radius: 10px;
+    border-color: black;
+
+}
+
+.send-button{
+
+    background-color: rgb(248, 160, 54, 0.6);
+    border: 2px  rgb(248, 160, 54, 0.6);
+    border-radius: 12px; 
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    
+}
+
+.send-button:hover{
+
+    background-color: black;
+    color: white;
+    
+}
+
+
+
 

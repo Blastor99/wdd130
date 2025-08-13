@@ -24,10 +24,13 @@ header{
     box-sizing: border-box;
 }
 
-body{
+html, body{
 
     font-family: var(--body-font);
     color: var(--accent-2);
+    overflow-x: hidden;
+    max-width: 100%;
+    
 }
 
 header nav{
@@ -228,6 +231,12 @@ footer {
 .contact-page{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+    align-items: start; 
+    gap: 40px; 
+    margin: auto;
+    max-width: 1200px; 
+
 }
 
 .email-box img{
@@ -324,6 +333,16 @@ footer {
     border: 2px  black;
     border-radius: 50px;
     height: 45%;
+    
+    
+    
+    align-items: center; 
+    
+    
+    
+    
+    
+
     
 }
 

@@ -5,21 +5,13 @@
     --accent-2: rgb(53, 53, 49); /*black olive*/
     --heading-font: "Bebas Neue", sans-serif;
     --body-font: "Open sans", sans-serif;
-
-}
-
-header{
-
-    background-color: var(--primary-color);
-    color: var(--accent-2);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center; 
     
+
 }
+
 
 *{
-    margin: 15px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -31,33 +23,74 @@ html, body{
     overflow-x: hidden;
     max-width: 100%;
     
+    
+}
+
+header{
+
+    display: flex;
+    flex-wrap: nowrap;
+   
+    background: linear-gradient(to bottom, rgb(248, 160, 54, 0.6), transparent);
+    border-bottom: 1px solid #ccc; 
+
+
+    align-items: center; 
+    font-size: larger;
+    
+
 }
 
 header nav{
+
+    
+    margin: 25px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
+    width: 50%;
+    font-family: var(--heading-font);
+    font-size: larger;
+    color: white;
+    
+    
+}
+
+
+header nav a:visited {
+  color:rgb(52, 52, 52); 
+  text-decoration: dashed;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header nav a:hover {
+  color: rgb(221, 134, 3);
 }
 
 header img{
     display: block;
     margin: auto;
+    width: 125px;
+    margin-left: 15px;
 }
 
 
 header, main, footer {
 
     max-width: 100%;
-    margin: auto;
+    
 }
 
 h1, h2 {
 
-    font-family: var(--heading-font);
+    font-family:"Rock Salt", cursive;
     color: var(--accent-2);
     text-align: center;
+    font-size: 28px;
 }
 
 
@@ -101,6 +134,7 @@ section img {
 }
 
 .adventure {
+    margin: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -118,10 +152,15 @@ section img {
 }
 
 figcaption {
-  background-color: #222;
-  color: #fff;
-  padding: 2px;
-  text-align: center;
+
+    margin: 15px;
+    background-color: rgb(248, 160, 54, 0.6);
+    color: black;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    font-family: var(--body-font);
 }
 
 
@@ -148,9 +187,9 @@ h1{
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: #F8A036;
-    color: black;
+    color: #F8A036;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.375);
 }
 
 .hero article {
@@ -176,7 +215,8 @@ h1{
 }
 
 footer .socialmedia img {
-    
+
+    margin: 15px;
     width: 24px;
     height: 24px;
     
@@ -184,11 +224,17 @@ footer .socialmedia img {
 }
 
 footer {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: space-around;
 
+}
+
+footer p{
+
+    margin: 15px;
 }
 
 /* Here starts the style of contact page */
@@ -198,14 +244,18 @@ footer {
 
     font-size: xx-large;
     text-align: left;
+    
 }
 
 .company-info h3{
 
+    margin: 50px;
     font-size: x-large;
     text-align: left;
     color: #F8A036;
     font-style: italic;
+    margin-left:-1px ;
+    font-size: 40px;
 }
 
 
@@ -219,21 +269,25 @@ footer {
 .happy {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px;
 }
 
 .happy img {
 
+    
     width: 400px;
     height: 200px;
     object-fit: cover;
 }
 
 .contact-page{
+
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center; 
     align-items: start; 
-    gap: 40px; 
+    gap: 150px; 
     margin: auto;
     max-width: 1200px; 
 
@@ -253,6 +307,7 @@ footer {
 
 .phone-box img{
 
+
     background-color: rgb(248, 160, 54, 0.6);
     border: 2px  rgb(248, 160, 54, 0.6);
     border-radius: 12px; 
@@ -262,6 +317,7 @@ footer {
 }
 
 .address-box img{
+
 
     background-color: rgb(248, 160, 54, 0.6);
     border: 2px  rgb(248, 160, 54, 0.6);
@@ -276,6 +332,7 @@ footer {
 
 .email-box{
 
+    margin: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 4fr;
     
@@ -284,24 +341,28 @@ footer {
 
 .value1{
 
+    margin: 15px;
     grid-column: 2/6;
     font-weight: bold;
 }
 
 .phone-box{
 
+    margin: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 4fr;
 }
 
 .value2{
 
+    margin: 15px;
     grid-column: 2/6;
     font-weight: bold;
 }
 
 .address-box{
 
+    margin: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 4fr;
 }
@@ -314,12 +375,14 @@ footer {
 
 .map-box{
 
+    
     display: grid;
     grid-template-columns: 1fr 1fr 4fr;
 }
 
 .map-box{
 
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -328,19 +391,14 @@ footer {
 
 .contact-info{
 
-    margin-top: 83px;
-    background-color: rgba(203, 202, 203, 0.205);
+    margin: 15px;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: rgb(248, 160, 54, 0.6);
     border: 2px  black;
     border-radius: 50px;
-    height: 45%;
-    
-    
-    
+    height: auto; 
     align-items: center; 
-    
-    
-    
-    
     
 
     
@@ -348,12 +406,14 @@ footer {
 
 .contact-info label{
 
+    margin: 15px;
     font-size: small;
     font-weight: bold;
 }
 
 .name-box{
 
+    margin: 15px;
     width: 90%;
     height: 35px;
     border-radius: 5px;
@@ -361,19 +421,37 @@ footer {
 
 .box-email{
 
+    margin: 15px;
     width: 90%;
     height: 35px;
     border-radius: 5px;
 }
 
 .radio-input{
-
+    margin: 15px;
     margin-top: 25px;
 }
 
+.purpose input{
+
+    margin: 15px;
+}
+
+.form-item column1{
+
+    margin:15px;
+}
+
+.checkbox-end{
+
+    margin: 15px;
+}
+
+
 .textarea{
 
-    width: 90%;
+    margin: 15px;
+    width: 95%;
     border: 10px;
     border-radius: 10px;
     border-color: black;
@@ -382,8 +460,10 @@ footer {
 
 .send-button{
 
-    background-color: rgb(248, 160, 54, 0.6);
-    border: 2px  rgb(248, 160, 54, 0.6);
+    margin: 15px;
+    background-color: black;
+    border: 2px  white;
+    color: white;
     border-radius: 12px; 
     width: 150px;
     height: 40px;
@@ -392,19 +472,341 @@ footer {
 }
 
 .send-button:hover{
-
-    background-color: black;
-    color: white;
+    
+    margin: 15px;
+    background-color: rgb(175, 175, 175);
+    color: black;
     
 }
 
 .contact-h1{
 
     background-color: transparent;
-    margin-top: 200px;
+    margin-top: 160px;
     text-align: left;
-    margin-left: -1px;
+    margin-left: -15px;
+    color: black;
+    font-size: x-large;
 }
+
+/* Here starts the style of HOME PAGE */
+
+
+.hero-index {
+
+    position: relative!important;
+    width: 100vw !important;             
+    margin-left: calc(50% - 50vw) !important; 
+    margin-right: calc(50% - 50vw) !important;
+    overflow-x: hidden;       
+    left: -10px;
+    
+    
+    
+  
+}
+
+
+.hero-index img{
+
+    display: block;           
+    width: 100%;              
+    height: auto; 
+
+}
+
+
+.hero-index h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    background-color: transparent;
+    font-family: "Rock Salt", cursive;
+    color:#F8A036;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+.hero-p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    z-index: 2;
+}
+
+
+
+.book-now {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    padding: 10px 20px;
+    background-color:#F8A036;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.book-now:hover {
+    color: black;
+    background-color: white;
+}
+
+.subscribe{
+
+    width:550px;
+    margin: 25px;
+    padding: 20px;
+    margin-top: 80px;
+    
+    background-color: rgb(248, 160, 54, 0.6);
+    border: 2px  black;
+    border-radius: 50px;
+    height: auto; 
+    
+    
+}
+
+.subscribe label{
+
+    margin: 15px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.h3-subscribe{
+
+    margin: 15px;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Rock Salt", cursive;
+    text-align: center;
+}
+
+.p-subscribe{
+
+    margin: 15px;
+    font-size: medium;
+    font-family:var(--body-font);
+    
+}
+
+.subscribe-button{
+
+    margin-left: 150px;
+}
+
+.section-index{
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+
+}
+
+.figure-index{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px;
+    grid-column: 2/4;
+    gap: 50px;
+    
+}
+
+.figure-index img {
+
+    
+    width: 400px;
+    height: 200px;
+    object-fit:fill;
+    margin-top: 150px;
+    padding: auto;
+    border: 3px solid rgba(248, 161, 54, 0.053);
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+    padding: 8px;
+    
+
+}
+
+.figure-index figcaption {
+    
+    background: linear-gradient(to bottom, #F8A036, transparent);
+    
+}
+
+/* Here starts the TRIPS style*/
+
+.hero-trips{
+
+    padding: 100px 100px;
+    background-color: rgba(0, 0, 0, 0.766);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+
+.trips-h1{
+
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    margin: 180px;
+    margin-left: 50px;
+}
+
+.trips-p{
+
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    margin: 120px;
+    margin-top: 120px;
+    margin-left: 85px;
+    font-family: var(--body-font);
+    text-align: center;
+}
+
+.plan-trip{
+
+    width: 150px;
+    position: absolute;
+    left: 320px;
+    top: 370px;
+    padding: 20px 20px;
+    background-color:#F8A036;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: medium;
+    font-family:var(--body-font);
+    font-weight: bold;
+}
+
+.plan-trip:hover {
+    color: black;
+    background: white
+}
+
+.trip-descriptions{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 35px;
+    gap: 50px;
+    margin-bottom: 15rem;
+}
+
+.trip-descriptions img{
+
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border: 2px solid F8A036;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #F8A036, transparent);
+}
+
+.trip-descriptions h2{
+
+    font-size: medium;
+    font-style:italic;
+    margin-top: 5px;
+    background: linear-gradient(to bottom, #F8A036, transparent);
+    width: 250px;
+    margin-left: 115px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.trip-descriptions p{
+
+    font-size: medium;
+    text-align: center;
+    margin-top: 50px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    
+
+}
+
+
+.trip-table table {
+  width: 90%;
+  border-collapse: collapse;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 70px;
+  
+}
+
+.trip-table th{
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background: linear-gradient(to bottom, #F8A036, transparent);
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.trip-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.trip-table tr:hover {
+  background: linear-gradient(to bottom, #f4870251, transparent);
+  transition: background-color 0.3s ease;
+}
+
+.button-trips-contact{
+
+    width: 150px;
+    padding: 20px 20px;
+    background:  #F8A036;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: medium;
+    font-family:var(--body-font);
+    font-weight: bold;
+    margin-left: 690px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+}
+
+.button-trips-contact:hover {
+    color: black;
+    background: linear-gradient(to bottom, #f4870251, transparent);
+}
+
+
 
 
 
